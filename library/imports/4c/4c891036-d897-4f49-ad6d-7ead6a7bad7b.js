@@ -15,7 +15,9 @@ cc.Class({
 
   properties: {
     passages: [], //  存放在船上的animal对象
-    boatInfo: {}
+    boatInfo: {
+      default: null
+    }
   },
 
   //  初始化座位

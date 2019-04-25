@@ -82,7 +82,7 @@ cc.Class({
     bankInfo[pos][animalStr] -= 1 * addFlag;
     boatInfo[animalStr] += 1 * addFlag;
 
-    console.log(bankInfo, boatInfo);
+    // console.log(bankInfo, boatInfo);
   },
 
 

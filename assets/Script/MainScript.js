@@ -26,7 +26,9 @@ cc.Class({
       default: null,
       type: cc.Node,
     },
-    riverBankInfo: {},  //  存放两边岸上的情况
+    riverBankInfo: {
+      default: null,
+    },  //  存放两边岸上的情况
     GoBtn: {
       default: null,
       type: cc.Node,
@@ -131,7 +133,7 @@ cc.Class({
     if (Math.abs(this.boat.x - Data.boatPositionLeft.x) < 10) {  //  如果在左边
       //  移动船
       this.sailTo('right');
-      if (this.ifGameOver()) {
+      if (this.ifGameOver('left')) {
         this.gameOver();
       }
     } else {
@@ -204,7 +206,7 @@ cc.Class({
   //  pos表示判断哪一岸的情况
   ifGameOver(pos) {
     const boatInfo = this.boat.getComponent('Boat');
-    console.log(boatInfo)
+    console.log(this.riverBankInfo, boatInfo);
     if (this.riverBankInfo[pos].tigerNum + boatInfo.boatInfo.tigerNum
       > this.riverBankInfo[pos].deerNum + boatInfo.boatInfo.deerNum) return true;
     return false;
