@@ -1,0 +1,433 @@
+2019-04-25T01:46:45.008Z - normal: Load ~/.CocosCreator/settings.json
+2019-04-25T01:46:45.097Z - normal: Initializing Asset Database
+2019-04-25T01:46:45.102Z - normal: checking language setting...
+2019-04-25T01:46:45.102Z - normal: Language: zh
+2019-04-25T01:46:46.069Z - success: preview server running at http://localhost:7456
+2019-04-25T01:46:46.094Z - success: protocol editor-framework registered
+2019-04-25T01:46:46.094Z - success: protocol app registered
+2019-04-25T01:46:46.094Z - success: protocol theme registered
+2019-04-25T01:46:46.095Z - success: protocol packages registered
+2019-04-25T01:46:46.095Z - success: protocol uuid registerred
+2019-04-25T01:46:46.095Z - success: protocol db registerred
+2019-04-25T01:46:46.095Z - success: protocol thumbnail registerred
+2019-04-25T01:46:46.095Z - success: protocol unpack registerred
+2019-04-25T01:46:46.095Z - success: protocol disable-commonjs registerred
+2019-04-25T01:46:46.228Z - normal: connected!
+2019-04-25T01:46:46.230Z - normal: Check project /Users/admin/Documents/cocos/CrossTheRiver2
+2019-04-25T01:46:46.232Z - normal: Initializing project /Users/admin/Documents/cocos/CrossTheRiver2
+2019-04-25T01:46:46.757Z - normal: Initializing Cocos2d
+2019-04-25T01:46:47.911Z - normal: Initializing engine extends
+2019-04-25T01:46:47.950Z - success: asset-db-debugger loaded
+2019-04-25T01:46:47.952Z - success: baidu-adapter loaded
+2019-04-25T01:46:47.955Z - success: color-picker loaded
+2019-04-25T01:46:48.066Z - success: fb-audience-network loaded
+2019-04-25T01:46:48.143Z - success: fb-live-stream loaded
+2019-04-25T01:46:48.158Z - success: google-play-instant loaded
+2019-04-25T01:46:48.167Z - success: huawei-runtime loaded
+2019-04-25T01:46:48.170Z - success: jsb-adapter loaded
+2019-04-25T01:46:48.179Z - success: oppo-runtime loaded
+2019-04-25T01:46:48.189Z - success: package-manager loaded
+2019-04-25T01:46:48.351Z - success: qqplay-adapter loaded
+2019-04-25T01:46:48.355Z - success: runtime-dev-tools loaded
+2019-04-25T01:46:48.364Z - success: sdkbox loaded
+2019-04-25T01:46:48.374Z - success: tester loaded
+2019-04-25T01:46:48.383Z - success: ui-grid loaded
+2019-04-25T01:46:48.389Z - success: ui-kit-preview-extra loaded
+2019-04-25T01:46:48.397Z - success: ui-kit-preview loaded
+2019-04-25T01:46:48.404Z - success: ui-kit loaded
+2019-04-25T01:46:48.411Z - success: ui-tree loaded
+2019-04-25T01:46:48.420Z - success: vivo-runtime loaded
+2019-04-25T01:46:48.422Z - success: weapp-adapter loaded
+2019-04-25T01:46:48.472Z - success: assets loaded
+2019-04-25T01:46:48.476Z - success: builder loaded
+2019-04-25T01:46:48.799Z - success: cocos-services loaded
+2019-04-25T01:46:48.805Z - success: console loaded
+2019-04-25T01:46:48.845Z - success: fb-instant-games loaded
+2019-04-25T01:46:48.850Z - success: google-instant-games loaded
+2019-04-25T01:46:48.857Z - success: hierarchy loaded
+2019-04-25T01:46:48.862Z - success: inspector loaded
+2019-04-25T01:46:48.864Z - success: keystore loaded
+2019-04-25T01:46:48.870Z - success: node-library loaded
+2019-04-25T01:46:48.875Z - success: package-asset loaded
+2019-04-25T01:46:48.878Z - success: preferences loaded
+2019-04-25T01:46:48.884Z - success: project-exporter loaded
+2019-04-25T01:46:48.891Z - success: project-importer loaded
+2019-04-25T01:46:48.895Z - success: project-settings loaded
+2019-04-25T01:46:48.903Z - success: scene loaded
+2019-04-25T01:46:48.905Z - success: simulator-debugger loaded
+2019-04-25T01:46:48.909Z - success: sprite-editor loaded
+2019-04-25T01:46:48.914Z - success: store loaded
+2019-04-25T01:46:48.920Z - success: timeline loaded
+2019-04-25T01:46:50.725Z - info: Cocos Services load base data!
+2019-04-25T01:46:51.320Z - normal: Loading packages
+2019-04-25T01:46:51.328Z - normal: Watching packages
+2019-04-25T01:46:51.521Z - normal: Run Application
+2019-04-25T01:55:44.392Z - warn: The 'type' attribute of 'MainScript.GoBtn' is undefined when loading script
+2019-04-25T01:55:45.553Z - warn: The 'type' attribute of 'MainScript.GoBtn' is undefined when loading script
+2019-04-25T02:25:18.162Z - failed: [db-task][sync-changes] Failed to import asset /Users/admin/Documents/cocos/CrossTheRiver2/assets/Script/MainScript.js, message: Compile error: SyntaxError: /Users/admin/Documents/cocos/CrossTheRiver2/assets/Script/MainScript.js: "tigerImg" is read-only
+  41 |       const tiger = cc.instantiate(this.tigerPrefab);
+  42 |       const tigerImg = tiger.getComponent(cc.Sprite);
+> 43 |       tigerImg = new cc.SpriteFrame(cc.url.raw('resources/deer.png'));
+     |       ^
+  44 |       // console.log(tigerImg.spriteFrame, cc.url.raw('resources/deer.png'));
+  45 | 
+  46 |       this.node.addChild(tiger);
+    at File.buildCodeFrameError (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babel-core/lib/transformation/file/index.js:431:15)
+    at NodePath.buildCodeFrameError (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babel-traverse/lib/path/index.js:140:26)
+    at PluginPass.Scope (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babel-plugin-check-es2015-constants/lib/index.js:35:29)
+    at PluginPass.newFn (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babel-traverse/lib/visitors.js:318:17)
+    at newFn (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babel-traverse/lib/visitors.js:276:21)
+    at NodePath._call (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babel-traverse/lib/path/context.js:76:18)
+    at NodePath.call (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babel-traverse/lib/path/context.js:48:17)
+    at NodePath.visit (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babel-traverse/lib/path/context.js:105:12)
+    at TraversalContext.visitQueue (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babel-traverse/lib/context.js:150:16)
+    at TraversalContext.visitSingle (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babel-traverse/lib/context.js:108:19)
+2019-04-25T02:25:55.985Z - failed: [db-task][sync-changes] Failed to import asset /Users/admin/Documents/cocos/CrossTheRiver2/assets/Script/MainScript.js, message: Compile error: SyntaxError: /Users/admin/Documents/cocos/CrossTheRiver2/assets/Script/MainScript.js: "tigerImg" is read-only
+  41 |       const tiger = cc.instantiate(this.tigerPrefab);
+  42 |       const tigerImg = tiger.getComponent(cc.Sprite);
+> 43 |       tigerImg = new cc.SpriteFrame(cc.url.raw('resources/deer.png'));
+     |       ^
+  44 |       // console.log(tigerImg.spriteFrame, cc.url.raw('resources/deer.png'));
+  45 | 
+  46 |       this.node.addChild(tiger);
+    at File.buildCodeFrameError (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babel-core/lib/transformation/file/index.js:431:15)
+    at NodePath.buildCodeFrameError (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babel-traverse/lib/path/index.js:140:26)
+    at PluginPass.Scope (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babel-plugin-check-es2015-constants/lib/index.js:35:29)
+    at PluginPass.newFn (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babel-traverse/lib/visitors.js:318:17)
+    at newFn (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babel-traverse/lib/visitors.js:276:21)
+    at NodePath._call (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babel-traverse/lib/path/context.js:76:18)
+    at NodePath.call (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babel-traverse/lib/path/context.js:48:17)
+    at NodePath.visit (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babel-traverse/lib/path/context.js:105:12)
+    at TraversalContext.visitQueue (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babel-traverse/lib/context.js:150:16)
+    at TraversalContext.visitSingle (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babel-traverse/lib/context.js:108:19)
+2019-04-25T02:49:25.525Z - failed: [db-task][sync-changes] Failed to import asset /Users/admin/Documents/cocos/CrossTheRiver2/assets/Script/MainScript.js, message: Compile error: SyntaxError: /Users/admin/Documents/cocos/CrossTheRiver2/assets/Script/MainScript.js: Unexpected token, expected , (45:107)
+  43 |       const realUrl = cc.url.raw('resources/deer.png');
+  44 |       const texture = cc.textureCache.addImage(realUrl);
+> 45 |       tiget.getComponent(cc.Node).spriteFrame.setTexture(new cc.Texture2D(cc.url.raw('resources/deer.png'));
+     |                                                                                                            ^
+  46 |       // let tigerImg = tiger.getComponent(cc.Sprite);
+  47 |       // console.log(tigerImg.spriteFrame, cc.url.raw('resources/deer.png'));
+  48 | 
+    at Parser.pp$5.raise (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:4454:13)
+    at Parser.pp.unexpected (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:1761:8)
+    at Parser.pp.expect (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:1749:33)
+    at Parser.pp$3.parseCallExpressionArguments (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3564:12)
+    at Parser.pp$3.parseSubscripts (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3533:31)
+    at Parser.pp$3.parseExprSubscripts (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3504:15)
+    at Parser.pp$3.parseMaybeUnary (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3474:19)
+    at Parser.pp$3.parseExprOps (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3404:19)
+    at Parser.pp$3.parseMaybeConditional (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3381:19)
+    at Parser.pp$3.parseMaybeAssign (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3344:19)
+2019-04-25T02:49:44.580Z - failed: [db-task][sync-changes] Failed to import asset /Users/admin/Documents/cocos/CrossTheRiver2/assets/Script/MainScript.js, message: Compile error: SyntaxError: /Users/admin/Documents/cocos/CrossTheRiver2/assets/Script/MainScript.js: Unexpected token, expected , (45:107)
+  43 |       const realUrl = cc.url.raw('resources/deer.png');
+  44 |       const texture = cc.textureCache.addImage(realUrl);
+> 45 |       tiger.getComponent(cc.Node).spriteFrame.setTexture(new cc.Texture2D(cc.url.raw('resources/deer.png'));
+     |                                                                                                            ^
+  46 |       // let tigerImg = tiger.getComponent(cc.Sprite);
+  47 |       // console.log(tigerImg.spriteFrame, cc.url.raw('resources/deer.png'));
+  48 | 
+    at Parser.pp$5.raise (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:4454:13)
+    at Parser.pp.unexpected (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:1761:8)
+    at Parser.pp.expect (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:1749:33)
+    at Parser.pp$3.parseCallExpressionArguments (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3564:12)
+    at Parser.pp$3.parseSubscripts (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3533:31)
+    at Parser.pp$3.parseExprSubscripts (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3504:15)
+    at Parser.pp$3.parseMaybeUnary (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3474:19)
+    at Parser.pp$3.parseExprOps (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3404:19)
+    at Parser.pp$3.parseMaybeConditional (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3381:19)
+    at Parser.pp$3.parseMaybeAssign (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3344:19)
+2019-04-25T03:38:57.002Z - warn: The Asset used by component "Boat" is missing. Detailed information:
+Node path: "Canvas/boat"
+Missing uuid: "03e5a5f2-5a41-4220-b76c-4a699b63d855"
+
+2019-04-25T03:38:57.005Z - warn: The Asset used by component "Boat" is missing. Detailed information:
+Node path: "Canvas/boat"
+Missing uuid: "504093f3-29cb-4835-951e-5be1e5bc4ce0"
+
+2019-04-25T03:38:57.006Z - warn: The Asset used by component "Boat" is missing. Detailed information:
+Node path: "Canvas/boat"
+Missing uuid: "03e5a5f2-5a41-4220-b76c-4a699b63d855"
+
+2019-04-25T03:38:57.006Z - warn: The Asset used by component "Boat" is missing. Detailed information:
+Node path: "Canvas/boat"
+Missing uuid: "03e5a5f2-5a41-4220-b76c-4a699b63d855"
+
+2019-04-25T03:38:57.006Z - warn: The Asset used by component "Boat" is missing. Detailed information:
+Node path: "Canvas/boat"
+Missing uuid: "504093f3-29cb-4835-951e-5be1e5bc4ce0"
+
+2019-04-25T03:38:57.007Z - warn: The Asset used by component "Boat" is missing. Detailed information:
+Node path: "Canvas/boat"
+Missing uuid: "504093f3-29cb-4835-951e-5be1e5bc4ce0"
+
+2019-04-25T03:55:00.710Z - warn: The Prefab used by component "MainScript" is missing. Detailed information:
+Node path: "Canvas"
+Missing uuid: "82f7c7d0-eb40-4025-b527-9b97801fa584"
+
+2019-04-25T03:55:10.825Z - warn: The Asset used by node "animal" is missing. Detailed information:
+Node path: "animal"
+Missing uuid: "82f7c7d0-eb40-4025-b527-9b97801fa584"
+
+2019-04-25T03:55:10.838Z - warn: The Asset used is missing. Detailed information:
+Missing uuid: "82f7c7d0-eb40-4025-b527-9b97801fa584"
+
+2019-04-25T09:46:30.636Z - error: Property 'Boat.boatInfo' must define at least one of 'default', 'get' or 'set'.
+    at Object.cc.errorID (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/CCDebug.js:167:16)
+    at Object.exports.preprocessAttrs (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/preprocess-class.js:215:36)
+    at declareProperties (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/CCClass.js:642:28)
+    at Object.CCClass [as Class] (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/CCClass.js:685:17)
+    at __define (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/Boat.js:13:4)
+    at /Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/Boat.js:133:13
+    at Object.<anonymous> (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/Boat.js:140:11)
+    at Object.<anonymous> (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/Boat.js:143:3)
+    at Module._compile (module.js:571:32)
+2019-04-25T09:46:30.640Z - error: Property 'MainScript.riverBankInfo' must define at least one of 'default', 'get' or 'set'.
+    at Object.cc.errorID (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/CCDebug.js:167:16)
+    at Object.exports.preprocessAttrs (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/preprocess-class.js:215:36)
+    at declareProperties (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/CCClass.js:642:28)
+    at Object.CCClass [as Class] (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/CCClass.js:685:17)
+    at __define (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/MainScript.js:13:4)
+    at /Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/MainScript.js:255:13
+    at Object.<anonymous> (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/MainScript.js:262:11)
+    at Object.<anonymous> (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/MainScript.js:265:3)
+    at Module._compile (module.js:571:32)
+2019-04-25T09:48:01.948Z - error: Property 'Boat.boatInfo' must define at least one of 'default', 'get' or 'set'.
+    at Object.cc.errorID (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/CCDebug.js:167:16)
+    at Object.exports.preprocessAttrs (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/preprocess-class.js:215:36)
+    at declareProperties (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/CCClass.js:642:28)
+    at Object.CCClass [as Class] (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/CCClass.js:685:17)
+    at __define (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/Boat.js:13:4)
+    at /Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/Boat.js:133:13
+    at Object.<anonymous> (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/Boat.js:140:11)
+    at Object.<anonymous> (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/Boat.js:143:3)
+    at Module._compile (module.js:571:32)
+2019-04-25T09:48:01.951Z - error: Property 'MainScript.riverBankInfo' must define at least one of 'default', 'get' or 'set'.
+    at Object.cc.errorID (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/CCDebug.js:167:16)
+    at Object.exports.preprocessAttrs (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/preprocess-class.js:215:36)
+    at declareProperties (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/CCClass.js:642:28)
+    at Object.CCClass [as Class] (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/CCClass.js:685:17)
+    at __define (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/MainScript.js:13:4)
+    at /Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/MainScript.js:255:13
+    at Object.<anonymous> (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/MainScript.js:262:11)
+    at Object.<anonymous> (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/MainScript.js:265:3)
+    at Module._compile (module.js:571:32)
+2019-04-25T09:48:34.495Z - error: Property 'Boat.boatInfo' must define at least one of 'default', 'get' or 'set'.
+    at Object.cc.errorID (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/CCDebug.js:167:16)
+    at Object.exports.preprocessAttrs (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/preprocess-class.js:215:36)
+    at declareProperties (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/CCClass.js:642:28)
+    at Object.CCClass [as Class] (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/CCClass.js:685:17)
+    at __define (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/Boat.js:13:4)
+    at /Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/Boat.js:133:13
+    at Object.<anonymous> (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/Boat.js:140:11)
+    at Object.<anonymous> (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/Boat.js:143:3)
+    at Module._compile (module.js:571:32)
+2019-04-25T09:48:34.497Z - error: Property 'MainScript.riverBankInfo' must define at least one of 'default', 'get' or 'set'.
+    at Object.cc.errorID (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/CCDebug.js:167:16)
+    at Object.exports.preprocessAttrs (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/preprocess-class.js:215:36)
+    at declareProperties (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/CCClass.js:642:28)
+    at Object.CCClass [as Class] (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/CCClass.js:685:17)
+    at __define (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/MainScript.js:13:4)
+    at /Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/MainScript.js:255:13
+    at Object.<anonymous> (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/MainScript.js:262:11)
+    at Object.<anonymous> (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/MainScript.js:265:3)
+    at Module._compile (module.js:571:32)
+2019-04-25T09:49:07.047Z - error: Property 'Boat.boatInfo' must define at least one of 'default', 'get' or 'set'.
+    at Object.cc.errorID (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/CCDebug.js:167:16)
+    at Object.exports.preprocessAttrs (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/preprocess-class.js:215:36)
+    at declareProperties (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/CCClass.js:642:28)
+    at Object.CCClass [as Class] (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/CCClass.js:685:17)
+    at __define (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/Boat.js:13:4)
+    at /Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/Boat.js:133:13
+    at Object.<anonymous> (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/Boat.js:140:11)
+    at Object.<anonymous> (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/Boat.js:143:3)
+    at Module._compile (module.js:571:32)
+2019-04-25T09:49:07.048Z - error: Property 'MainScript.riverBankInfo' must define at least one of 'default', 'get' or 'set'.
+    at Object.cc.errorID (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/CCDebug.js:167:16)
+    at Object.exports.preprocessAttrs (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/preprocess-class.js:215:36)
+    at declareProperties (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/CCClass.js:642:28)
+    at Object.CCClass [as Class] (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/CCClass.js:685:17)
+    at __define (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/MainScript.js:13:4)
+    at /Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/MainScript.js:255:13
+    at Object.<anonymous> (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/MainScript.js:262:11)
+    at Object.<anonymous> (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/MainScript.js:265:3)
+    at Module._compile (module.js:571:32)
+2019-04-25T09:50:26.473Z - error: Property 'Boat.boatInfo' must define at least one of 'default', 'get' or 'set'.
+    at Object.cc.errorID (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/CCDebug.js:167:16)
+    at Object.exports.preprocessAttrs (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/preprocess-class.js:215:36)
+    at declareProperties (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/CCClass.js:642:28)
+    at Object.CCClass [as Class] (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/CCClass.js:685:17)
+    at __define (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/Boat.js:13:4)
+    at /Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/Boat.js:133:13
+    at Object.<anonymous> (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/Boat.js:140:11)
+    at Object.<anonymous> (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/Boat.js:143:3)
+    at Module._compile (module.js:571:32)
+2019-04-25T09:50:26.474Z - error: Property 'MainScript.riverBankInfo' must define at least one of 'default', 'get' or 'set'.
+    at Object.cc.errorID (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/CCDebug.js:167:16)
+    at Object.exports.preprocessAttrs (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/preprocess-class.js:215:36)
+    at declareProperties (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/CCClass.js:642:28)
+    at Object.CCClass [as Class] (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/CCClass.js:685:17)
+    at __define (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/MainScript.js:13:4)
+    at /Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/MainScript.js:255:13
+    at Object.<anonymous> (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/MainScript.js:262:11)
+    at Object.<anonymous> (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/MainScript.js:265:3)
+    at Module._compile (module.js:571:32)
+2019-04-25T09:50:54.321Z - error: Property 'Boat.boatInfo' must define at least one of 'default', 'get' or 'set'.
+    at Object.cc.errorID (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/CCDebug.js:167:16)
+    at Object.exports.preprocessAttrs (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/preprocess-class.js:215:36)
+    at declareProperties (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/CCClass.js:642:28)
+    at Object.CCClass [as Class] (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/CCClass.js:685:17)
+    at __define (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/Boat.js:13:4)
+    at /Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/Boat.js:134:13
+    at Object.<anonymous> (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/Boat.js:141:11)
+    at Object.<anonymous> (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/Boat.js:144:3)
+    at Module._compile (module.js:571:32)
+2019-04-25T09:50:54.323Z - error: Property 'MainScript.riverBankInfo' must define at least one of 'default', 'get' or 'set'.
+    at Object.cc.errorID (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/CCDebug.js:167:16)
+    at Object.exports.preprocessAttrs (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/preprocess-class.js:215:36)
+    at declareProperties (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/CCClass.js:642:28)
+    at Object.CCClass [as Class] (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/CCClass.js:685:17)
+    at __define (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/MainScript.js:13:4)
+    at /Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/MainScript.js:255:13
+    at Object.<anonymous> (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/MainScript.js:262:11)
+    at Object.<anonymous> (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/MainScript.js:265:3)
+    at Module._compile (module.js:571:32)
+2019-04-25T09:51:14.590Z - error: Property 'Boat.boatInfo' must define at least one of 'default', 'get' or 'set'.
+    at Object.cc.errorID (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/CCDebug.js:167:16)
+    at Object.exports.preprocessAttrs (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/preprocess-class.js:215:36)
+    at declareProperties (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/CCClass.js:642:28)
+    at Object.CCClass [as Class] (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/CCClass.js:685:17)
+    at __define (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/Boat.js:13:4)
+    at /Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/Boat.js:134:13
+    at Object.<anonymous> (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/Boat.js:141:11)
+    at Object.<anonymous> (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/Boat.js:144:3)
+    at Module._compile (module.js:571:32)
+2019-04-25T09:51:14.592Z - error: Property 'MainScript.riverBankInfo' must define at least one of 'default', 'get' or 'set'.
+    at Object.cc.errorID (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/CCDebug.js:167:16)
+    at Object.exports.preprocessAttrs (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/preprocess-class.js:215:36)
+    at declareProperties (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/CCClass.js:642:28)
+    at Object.CCClass [as Class] (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/CCClass.js:685:17)
+    at __define (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/MainScript.js:13:4)
+    at /Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/MainScript.js:255:13
+    at Object.<anonymous> (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/MainScript.js:262:11)
+    at Object.<anonymous> (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/MainScript.js:265:3)
+    at Module._compile (module.js:571:32)
+2019-04-25T09:52:46.050Z - error: Property 'Boat.boatInfo' must define at least one of 'default', 'get' or 'set'.
+    at Object.cc.errorID (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/CCDebug.js:167:16)
+    at Object.exports.preprocessAttrs (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/preprocess-class.js:215:36)
+    at declareProperties (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/CCClass.js:642:28)
+    at Object.CCClass [as Class] (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/CCClass.js:685:17)
+    at __define (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/Boat.js:13:4)
+    at /Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/Boat.js:134:13
+    at Object.<anonymous> (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/Boat.js:141:11)
+    at Object.<anonymous> (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/Boat.js:144:3)
+    at Module._compile (module.js:571:32)
+2019-04-25T09:52:46.053Z - error: Property 'MainScript.riverBankInfo' must define at least one of 'default', 'get' or 'set'.
+    at Object.cc.errorID (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/CCDebug.js:167:16)
+    at Object.exports.preprocessAttrs (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/preprocess-class.js:215:36)
+    at declareProperties (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/CCClass.js:642:28)
+    at Object.CCClass [as Class] (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/CCClass.js:685:17)
+    at __define (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/MainScript.js:13:4)
+    at /Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/MainScript.js:258:13
+    at Object.<anonymous> (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/MainScript.js:265:11)
+    at Object.<anonymous> (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/MainScript.js:268:3)
+    at Module._compile (module.js:571:32)
+2019-04-25T09:53:40.904Z - error: Property 'Boat.boatInfo' must define at least one of 'default', 'get' or 'set'.
+    at Object.cc.errorID (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/CCDebug.js:167:16)
+    at Object.exports.preprocessAttrs (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/preprocess-class.js:215:36)
+    at declareProperties (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/CCClass.js:642:28)
+    at Object.CCClass [as Class] (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/CCClass.js:685:17)
+    at __define (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/Boat.js:13:4)
+    at /Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/Boat.js:134:13
+    at Object.<anonymous> (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/Boat.js:141:11)
+    at Object.<anonymous> (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/Boat.js:144:3)
+    at Module._compile (module.js:571:32)
+2019-04-25T09:53:40.908Z - error: Property 'MainScript.riverBankInfo' must define at least one of 'default', 'get' or 'set'.
+    at Object.cc.errorID (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/CCDebug.js:167:16)
+    at Object.exports.preprocessAttrs (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/preprocess-class.js:215:36)
+    at declareProperties (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/CCClass.js:642:28)
+    at Object.CCClass [as Class] (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/CCClass.js:685:17)
+    at __define (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/MainScript.js:13:4)
+    at /Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/MainScript.js:260:13
+    at Object.<anonymous> (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/MainScript.js:267:11)
+    at Object.<anonymous> (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/MainScript.js:270:3)
+    at Module._compile (module.js:571:32)
+2019-04-25T09:54:04.130Z - error: Property 'Boat.boatInfo' must define at least one of 'default', 'get' or 'set'.
+    at Object.cc.errorID (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/CCDebug.js:167:16)
+    at Object.exports.preprocessAttrs (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/preprocess-class.js:215:36)
+    at declareProperties (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/CCClass.js:642:28)
+    at Object.CCClass [as Class] (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/CCClass.js:685:17)
+    at __define (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/Boat.js:13:4)
+    at /Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/Boat.js:134:13
+    at Object.<anonymous> (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/Boat.js:141:11)
+    at Object.<anonymous> (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/Boat.js:144:3)
+    at Module._compile (module.js:571:32)
+2019-04-25T09:54:04.144Z - error: Property 'MainScript.riverBankInfo' must define at least one of 'default', 'get' or 'set'.
+    at Object.cc.errorID (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/CCDebug.js:167:16)
+    at Object.exports.preprocessAttrs (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/preprocess-class.js:215:36)
+    at declareProperties (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/CCClass.js:642:28)
+    at Object.CCClass [as Class] (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/CCClass.js:685:17)
+    at __define (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/MainScript.js:13:4)
+    at /Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/MainScript.js:262:13
+    at Object.<anonymous> (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/MainScript.js:269:11)
+    at Object.<anonymous> (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/MainScript.js:272:3)
+    at Module._compile (module.js:571:32)
+2019-04-25T09:55:18.543Z - error: Property 'Boat.boatInfo' must define at least one of 'default', 'get' or 'set'.
+    at Object.cc.errorID (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/CCDebug.js:167:16)
+    at Object.exports.preprocessAttrs (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/preprocess-class.js:215:36)
+    at declareProperties (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/CCClass.js:642:28)
+    at Object.CCClass [as Class] (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/CCClass.js:685:17)
+    at __define (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/Boat.js:13:4)
+    at /Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/Boat.js:134:13
+    at Object.<anonymous> (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/Boat.js:141:11)
+    at Object.<anonymous> (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/Boat.js:144:3)
+    at Module._compile (module.js:571:32)
+2019-04-25T09:55:18.545Z - error: Property 'MainScript.riverBankInfo' must define at least one of 'default', 'get' or 'set'.
+    at Object.cc.errorID (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/CCDebug.js:167:16)
+    at Object.exports.preprocessAttrs (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/preprocess-class.js:215:36)
+    at declareProperties (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/CCClass.js:642:28)
+    at Object.CCClass [as Class] (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/CCClass.js:685:17)
+    at __define (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/MainScript.js:13:4)
+    at /Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/MainScript.js:265:13
+    at Object.<anonymous> (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/MainScript.js:272:11)
+    at Object.<anonymous> (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/MainScript.js:275:3)
+    at Module._compile (module.js:571:32)
+2019-04-25T09:56:22.603Z - error: Property 'Boat.boatInfo' must define at least one of 'default', 'get' or 'set'.
+    at Object.cc.errorID (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/CCDebug.js:167:16)
+    at Object.exports.preprocessAttrs (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/preprocess-class.js:215:36)
+    at declareProperties (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/CCClass.js:642:28)
+    at Object.CCClass [as Class] (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/CCClass.js:685:17)
+    at __define (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/Boat.js:13:4)
+    at /Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/Boat.js:134:13
+    at Object.<anonymous> (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/Boat.js:141:11)
+    at Object.<anonymous> (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/Boat.js:144:3)
+    at Module._compile (module.js:571:32)
+2019-04-25T09:56:22.606Z - error: Property 'MainScript.riverBankInfo' must define at least one of 'default', 'get' or 'set'.
+    at Object.cc.errorID (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/CCDebug.js:167:16)
+    at Object.exports.preprocessAttrs (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/preprocess-class.js:215:36)
+    at declareProperties (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/CCClass.js:642:28)
+    at Object.CCClass [as Class] (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/CCClass.js:685:17)
+    at __define (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/MainScript.js:13:4)
+    at /Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/MainScript.js:266:13
+    at Object.<anonymous> (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/MainScript.js:273:11)
+    at Object.<anonymous> (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/MainScript.js:276:3)
+    at Module._compile (module.js:571:32)
+2019-04-25T09:56:48.365Z - error: Property 'Boat.boatInfo' must define at least one of 'default', 'get' or 'set'.
+    at Object.cc.errorID (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/CCDebug.js:167:16)
+    at Object.exports.preprocessAttrs (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/preprocess-class.js:215:36)
+    at declareProperties (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/CCClass.js:642:28)
+    at Object.CCClass [as Class] (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/CCClass.js:685:17)
+    at __define (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/Boat.js:13:4)
+    at /Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/Boat.js:134:13
+    at Object.<anonymous> (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/Boat.js:141:11)
+    at Object.<anonymous> (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/Boat.js:144:3)
+    at Module._compile (module.js:571:32)
+2019-04-25T09:56:48.366Z - error: Property 'MainScript.riverBankInfo' must define at least one of 'default', 'get' or 'set'.
+    at Object.cc.errorID (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/CCDebug.js:167:16)
+    at Object.exports.preprocessAttrs (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/preprocess-class.js:215:36)
+    at declareProperties (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/CCClass.js:642:28)
+    at Object.CCClass [as Class] (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/CCClass.js:685:17)
+    at __define (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/MainScript.js:13:4)
+    at /Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/MainScript.js:266:13
+    at Object.<anonymous> (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/MainScript.js:273:11)
+    at Object.<anonymous> (/Users/admin/Documents/cocos/CrossTheRiver2/temp/quick-scripts/assets/Script/MainScript.js:276:3)
+    at Module._compile (module.js:571:32)

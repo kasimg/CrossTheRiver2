@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "goRight",
+    "texture": "f69ac56c-258b-47a6-9b57-94e97b77cb07",
+    "atlas": "",
+    "rect": [
+      0,
+      10,
+      512,
+      492
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      512,
+      512
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}
