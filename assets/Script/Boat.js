@@ -8,7 +8,7 @@
 //  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
 //  - [English] https://www.cocos2d-x.org/docs/creator/manual/en/scripting/life-cycle-callbacks.html
 
-import Data from 'static/Data';
+import Data from 'Data';
 cc.Class({
   extends: cc.Component,
 
@@ -50,6 +50,14 @@ cc.Class({
   //  判断是否在左岸
   atLeft() {
     if (Math.abs(this.node.x - Data.boatPositionLeft.x) < 10) return true;
+    return false;
+  },
+
+  //  判断船上是否有鹿
+  hasDeer() {
+    for (let i = 0; i < this.passages.length; i++) {
+      if (this.passages[i] && this.passages[i].animalType === 'deer') return true;
+    }
     return false;
   },
   

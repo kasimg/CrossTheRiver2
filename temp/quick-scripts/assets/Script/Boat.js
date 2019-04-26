@@ -4,7 +4,7 @@ cc._RF.push(module, '4c891A22JdPSa1tfq1qe617', 'Boat', __filename);
 
 'use strict';
 
-var _Data = require('static/Data');
+var _Data = require('Data');
 
 var _Data2 = _interopRequireDefault(_Data);
 
@@ -52,6 +52,15 @@ cc.Class({
   //  判断是否在左岸
   atLeft: function atLeft() {
     if (Math.abs(this.node.x - _Data2.default.boatPositionLeft.x) < 10) return true;
+    return false;
+  },
+
+
+  //  判断船上是否有鹿
+  hasDeer: function hasDeer() {
+    for (var i = 0; i < this.passages.length; i++) {
+      if (this.passages[i] && this.passages[i].animalType === 'deer') return true;
+    }
     return false;
   },
 

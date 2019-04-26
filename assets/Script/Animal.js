@@ -8,7 +8,7 @@
 //  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
 //  - [English] https://www.cocos2d-x.org/docs/creator/manual/en/scripting/life-cycle-callbacks.html
 
-import Data from 'static/Data';
+import Data from 'Data';
 cc.Class({
   extends: cc.Component,
 
@@ -34,7 +34,16 @@ cc.Class({
       .moveBy(1, cc.v2(delX, delY))
       .easing(cc.easeCubicActionOut());
 
-    this.node.runAction(jumpAction);
+    //  先取消所有动物的点击事件，防止疯狂点击
+    this.mainScript.removeAnimalClickEvent();
+    this.node.runAction(cc.sequence(jumpAction, cc.callFunc(() => {
+      //  如果是开往右岸，则判断是否游戏胜利
+      if (this.mainScript.ifSucceeded()) {
+        this.mainScript.succeed();
+      }
+      //  恢复动物点击事件
+      this.mainScript.bindAnimalClickEvent();
+    }, this)));
     // this.computeDelPos();
   },
 
@@ -89,6 +98,7 @@ cc.Class({
       .easing(cc.easeCubicActionOut());
 
     this.node.runAction(sailAction);
+    // return sailAction;
   },
 
   //  点击精灵的相应事件
@@ -134,20 +144,66 @@ cc.Class({
     };
   },
 
-  //  绑定鼠标点击跳跃时间
+  //  绑定鼠标点击跳跃事件
   bindClickEvent() {
     this.node.on(cc.Node.EventType.MOUSE_DOWN, this.onClicked, this);
   },
 
   //  移除鼠标点击事件
   removeClickEvent() {
-    this.node.on(cc.Node.EventType.MOUSE_DOWN, this.onClicked, this);
+    this.node.off(cc.Node.EventType.MOUSE_DOWN, this.onClicked, this);
   },
 
-  // LIFE-CYCLE CALLBACKS:
+  //  鼠标移动到动物身上后的事件
+  onMouseEnter() {
+    cc.game.canvas.style.cursor = 'pointer';
+    //  弹跳效果
+    const action1 = cc.scaleBy(0.2, 1.2);
+    const action2 = cc.scaleBy(0.3, 5 / 6);
+    //  取消悬停事件
+    this.removeMouseEnterEvent();
+    const se = cc.sequence(action1, action2, cc.callFunc(() => {
+      this.bindMouseEnterEvent();
+    }, this));
+    this.node.runAction(se);
+
+    //  发出声音
+    const soundType = this.animalType === 'tiger' ? 'tigerRoar' : 'deerSound';
+    this.node.parent.getChildByName('audioControl').getComponent('AudioControl')[soundType].play();
+    // console.log(this.node.parent.getChildByName('audioControl'));
+  },
+
+  //  鼠标移出动物后的事件
+  onMouseLeave() {
+    cc.game.canvas.style.cursor = 'default';
+  },
+
+  //  绑定鼠标悬停和移出事件事件
+  bindMouseEnterEvent() {
+    this.node.on(cc.Node.EventType.MOUSE_ENTER, this.onMouseEnter, this);
+    this.node.on(cc.Node.EventType.MOUSE_LEAVE, this.onMouseLeave, this);
+
+  },
+
+  //  移除鼠标悬停事件
+  removeMouseEnterEvent() {
+    this.node.off(cc.Node.EventType.MOUSE_ENTER, this.onMouseEnter, this);
+  },
+
+  /**
+   * 老虎吃鹿的动画
+   * @param {number} delX 横向位移量
+   * @param {number} delY 纵向位移量
+   * @return {} 动作对象
+   */
+  eatDeer({ delX, delY }) {
+    const eatAction = cc.moveBy(1, delX, delY);
+    return eatAction;
+  },
 
   onLoad() {
     this.bindClickEvent();
+    this.bindMouseEnterEvent();
     // console.log(this.atLeft());
   },
 

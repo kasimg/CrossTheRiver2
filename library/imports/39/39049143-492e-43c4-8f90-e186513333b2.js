@@ -4,7 +4,7 @@ cc._RF.push(module, '39049FDSS5DxI+Q4YZRMzOy', 'Animal');
 
 'use strict';
 
-var _Data = require('static/Data');
+var _Data = require('Data');
 
 var _Data2 = _interopRequireDefault(_Data);
 
@@ -27,6 +27,8 @@ cc.Class({
 
   //  跳跃行为
   jump: function jump(_ref) {
+    var _this = this;
+
     var _ref$delX = _ref.delX,
         delX = _ref$delX === undefined ? 0 : _ref$delX,
         _ref$delY = _ref.delY,
@@ -35,7 +37,16 @@ cc.Class({
     // console.log('jump')
     var jumpAction = cc.moveBy(1, cc.v2(delX, delY)).easing(cc.easeCubicActionOut());
 
-    this.node.runAction(jumpAction);
+    //  先取消所有动物的点击事件，防止疯狂点击
+    this.mainScript.removeAnimalClickEvent();
+    this.node.runAction(cc.sequence(jumpAction, cc.callFunc(function () {
+      //  如果是开往右岸，则判断是否游戏胜利
+      if (_this.mainScript.ifSucceeded()) {
+        _this.mainScript.succeed();
+      }
+      //  恢复动物点击事件
+      _this.mainScript.bindAnimalClickEvent();
+    }, this)));
     // this.computeDelPos();
   },
 
@@ -94,6 +105,7 @@ cc.Class({
     var sailAction = cc.moveBy(1, cc.v2(delX, delY)).easing(cc.easeCubicActionOut());
 
     this.node.runAction(sailAction);
+    // return sailAction;
   },
 
 
@@ -152,7 +164,7 @@ cc.Class({
   },
 
 
-  //  绑定鼠标点击跳跃时间
+  //  绑定鼠标点击跳跃事件
   bindClickEvent: function bindClickEvent() {
     this.node.on(cc.Node.EventType.MOUSE_DOWN, this.onClicked, this);
   },
@@ -160,14 +172,67 @@ cc.Class({
 
   //  移除鼠标点击事件
   removeClickEvent: function removeClickEvent() {
-    this.node.on(cc.Node.EventType.MOUSE_DOWN, this.onClicked, this);
+    this.node.off(cc.Node.EventType.MOUSE_DOWN, this.onClicked, this);
   },
 
 
-  // LIFE-CYCLE CALLBACKS:
+  //  鼠标移动到动物身上后的事件
+  onMouseEnter: function onMouseEnter() {
+    var _this2 = this;
 
+    cc.game.canvas.style.cursor = 'pointer';
+    //  弹跳效果
+    var action1 = cc.scaleBy(0.2, 1.2);
+    var action2 = cc.scaleBy(0.3, 5 / 6);
+    //  取消悬停事件
+    this.removeMouseEnterEvent();
+    var se = cc.sequence(action1, action2, cc.callFunc(function () {
+      _this2.bindMouseEnterEvent();
+    }, this));
+    this.node.runAction(se);
+
+    //  发出声音
+    var soundType = this.animalType === 'tiger' ? 'tigerRoar' : 'deerSound';
+    this.node.parent.getChildByName('audioControl').getComponent('AudioControl')[soundType].play();
+    // console.log(this.node.parent.getChildByName('audioControl'));
+  },
+
+
+  //  鼠标移出动物后的事件
+  onMouseLeave: function onMouseLeave() {
+    cc.game.canvas.style.cursor = 'default';
+  },
+
+
+  //  绑定鼠标悬停和移出事件事件
+  bindMouseEnterEvent: function bindMouseEnterEvent() {
+    this.node.on(cc.Node.EventType.MOUSE_ENTER, this.onMouseEnter, this);
+    this.node.on(cc.Node.EventType.MOUSE_LEAVE, this.onMouseLeave, this);
+  },
+
+
+  //  移除鼠标悬停事件
+  removeMouseEnterEvent: function removeMouseEnterEvent() {
+    this.node.off(cc.Node.EventType.MOUSE_ENTER, this.onMouseEnter, this);
+  },
+
+
+  /**
+   * 老虎吃鹿的动画
+   * @param {number} delX 横向位移量
+   * @param {number} delY 纵向位移量
+   * @return {} 动作对象
+   */
+  eatDeer: function eatDeer(_ref5) {
+    var delX = _ref5.delX,
+        delY = _ref5.delY;
+
+    var eatAction = cc.moveBy(1, delX, delY);
+    return eatAction;
+  },
   onLoad: function onLoad() {
     this.bindClickEvent();
+    this.bindMouseEnterEvent();
     // console.log(this.atLeft());
   },
   start: function start() {}
