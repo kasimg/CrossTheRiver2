@@ -325,8 +325,8 @@
     "relativePath": "resources/deer.png"
   },
   "f71a9012-617d-4fb7-8e2d-f32115e7cd25": {
-    "asset": 1556266426675,
-    "meta": 1556266426690,
+    "asset": 1556270113869,
+    "meta": 1556270113899,
     "relativePath": "Scene/stage.fire"
   },
   "d01d2e2e-b96c-424a-b295-37bd9b4ec936": {
@@ -399,11 +399,6 @@
     "meta": 1556264375209,
     "relativePath": "Script/GameOver.js"
   },
-  "39049143-492e-43c4-8f90-e186513333b2": {
-    "asset": 1556267119270,
-    "meta": 1556267148157,
-    "relativePath": "Script/Animal.js"
-  },
   "4c891036-d897-4f49-ad6d-7ead6a7bad7b": {
     "asset": 1556267145697,
     "meta": 1556267148674,
@@ -413,5 +408,10 @@
     "asset": 1556267131375,
     "meta": 1556267148732,
     "relativePath": "Script/MainScript.js"
+  },
+  "39049143-492e-43c4-8f90-e186513333b2": {
+    "asset": 1556270134640,
+    "meta": 1556270137138,
+    "relativePath": "Script/Animal.js"
   }
 }

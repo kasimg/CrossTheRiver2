@@ -37,16 +37,29 @@ cc.Class({
     // console.log('jump')
     var jumpAction = cc.moveBy(1, cc.v2(delX, delY)).easing(cc.easeCubicActionOut());
 
-    //  先取消所有动物的点击事件，防止疯狂点击
-    this.mainScript.removeAnimalClickEvent();
-    this.node.runAction(cc.sequence(jumpAction, cc.callFunc(function () {
+    var jumpTween = cc.tween(this.node).by(0.5, { position: cc.v2(delX / 2, 100) }, { easing: function easing(t) {
+        return t * t;
+      } }).by(0.3, { position: cc.v2(delX / 2, -100 + delY) }, { easing: function easing(t) {
+        return t * t;
+      } }).call(function () {
       //  如果是开往右岸，则判断是否游戏胜利
       if (_this.mainScript.ifSucceeded()) {
         _this.mainScript.succeed();
       }
       //  恢复动物点击事件
       _this.mainScript.bindAnimalClickEvent();
-    }, this)));
+    }, this);
+    //  先取消所有动物的点击事件，防止疯狂点击
+    this.mainScript.removeAnimalClickEvent();
+    jumpTween.start();
+    // this.node.runAction(cc.sequence(jumpAction, cc.callFunc(() => {
+    //   //  如果是开往右岸，则判断是否游戏胜利
+    //   if (this.mainScript.ifSucceeded()) {
+    //     this.mainScript.succeed();
+    //   }
+    //   //  恢复动物点击事件
+    //   this.mainScript.bindAnimalClickEvent();
+    // }, this)));
     // this.computeDelPos();
   },
 
