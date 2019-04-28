@@ -110,7 +110,7 @@ cc.Class({
     var delX = _ref.delX,
         delY = _ref.delY;
 
-    var sailAction = cc.moveBy(1, cc.v2(delX, delY)).easing(cc.easeCubicActionOut());
+    var sailAction = cc.moveBy(3, cc.v2(delX, delY)).easing(cc.easeCubicActionOut());
 
     // const se = cc.sequence(sailAction, cc.callFunc(() => {
     //   // console.log('finish');

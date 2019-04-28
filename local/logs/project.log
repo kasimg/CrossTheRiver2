@@ -1,208 +1,64 @@
-2019-04-25T11:13:40.859Z - normal: Load ~/.CocosCreator/settings.json
-2019-04-25T11:13:42.031Z - normal: Initializing Asset Database
-2019-04-25T11:13:42.034Z - normal: checking language setting...
-2019-04-25T11:13:42.035Z - normal: Language: zh
-2019-04-25T11:13:43.054Z - success: preview server running at http://localhost:7456
-2019-04-25T11:13:43.057Z - success: protocol editor-framework registered
-2019-04-25T11:13:43.057Z - success: protocol app registered
-2019-04-25T11:13:43.057Z - success: protocol theme registered
-2019-04-25T11:13:43.057Z - success: protocol packages registered
-2019-04-25T11:13:43.057Z - success: protocol uuid registerred
-2019-04-25T11:13:43.057Z - success: protocol db registerred
-2019-04-25T11:13:43.058Z - success: protocol thumbnail registerred
-2019-04-25T11:13:43.058Z - success: protocol unpack registerred
-2019-04-25T11:13:43.058Z - success: protocol disable-commonjs registerred
-2019-04-25T11:13:43.160Z - normal: connected!
-2019-04-25T11:13:43.162Z - normal: Check project C:\h5Game\CrossTheRiver2
-2019-04-25T11:13:43.164Z - normal: Initializing project C:\h5Game\CrossTheRiver2
-2019-04-25T11:13:43.707Z - normal: Initializing Cocos2d
-2019-04-25T11:13:44.752Z - normal: Initializing engine extends
-2019-04-25T11:13:44.789Z - success: asset-db-debugger loaded
-2019-04-25T11:13:44.789Z - success: baidu-adapter loaded
-2019-04-25T11:13:44.792Z - success: code-editor loaded
-2019-04-25T11:13:44.793Z - success: color-picker loaded
-2019-04-25T11:13:44.910Z - success: fb-audience-network loaded
-2019-04-25T11:13:44.996Z - success: fb-live-stream loaded
-2019-04-25T11:13:45.001Z - success: google-play-instant loaded
-2019-04-25T11:13:45.007Z - success: huawei-runtime loaded
-2019-04-25T11:13:45.008Z - success: jsb-adapter loaded
-2019-04-25T11:13:45.015Z - success: oppo-runtime loaded
-2019-04-25T11:13:45.020Z - success: package-manager loaded
-2019-04-25T11:13:45.185Z - success: qqplay-adapter loaded
-2019-04-25T11:13:45.187Z - success: runtime-dev-tools loaded
-2019-04-25T11:13:45.193Z - success: sdkbox loaded
-2019-04-25T11:13:45.198Z - success: tester loaded
-2019-04-25T11:13:45.201Z - success: ui-grid loaded
-2019-04-25T11:13:45.204Z - success: ui-kit-preview-extra loaded
-2019-04-25T11:13:45.207Z - success: ui-kit-preview loaded
-2019-04-25T11:13:45.209Z - success: ui-kit loaded
-2019-04-25T11:13:45.211Z - success: ui-tree loaded
-2019-04-25T11:13:45.217Z - success: vivo-runtime loaded
-2019-04-25T11:13:45.218Z - success: weapp-adapter loaded
-2019-04-25T11:13:45.267Z - success: assets loaded
-2019-04-25T11:13:45.270Z - success: builder loaded
-2019-04-25T11:13:45.639Z - success: cocos-services loaded
-2019-04-25T11:13:45.644Z - success: console loaded
-2019-04-25T11:13:45.687Z - success: fb-instant-games loaded
-2019-04-25T11:13:45.689Z - success: google-instant-games loaded
-2019-04-25T11:13:45.695Z - success: hierarchy loaded
-2019-04-25T11:13:45.698Z - success: inspector loaded
-2019-04-25T11:13:45.699Z - success: keystore loaded
-2019-04-25T11:13:45.704Z - success: node-library loaded
-2019-04-25T11:13:45.706Z - success: package-asset loaded
-2019-04-25T11:13:45.708Z - success: preferences loaded
-2019-04-25T11:13:45.709Z - success: project-exporter loaded
-2019-04-25T11:13:45.711Z - success: project-importer loaded
-2019-04-25T11:13:45.713Z - success: project-settings loaded
-2019-04-25T11:13:45.717Z - success: scene loaded
-2019-04-25T11:13:45.723Z - success: simulator-debugger loaded
-2019-04-25T11:13:45.725Z - success: sprite-editor loaded
-2019-04-25T11:13:45.729Z - success: store loaded
-2019-04-25T11:13:45.734Z - success: timeline loaded
-2019-04-25T11:13:47.124Z - info: Cocos Services load base data!
-2019-04-25T11:13:53.678Z - normal: Loading packages
-2019-04-25T11:13:53.686Z - normal: Watching packages
-2019-04-25T11:13:54.658Z - normal: Run Application
-2019-04-25T11:14:02.452Z - error: Property 'Boat.boatInfo' must define at least one of 'default', 'get' or 'set'.
-    at Object.cc.errorID (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\CCDebug.js:167:16)
-    at Object.exports.preprocessAttrs (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\preprocess-class.js:215:36)
-    at declareProperties (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:642:28)
-    at Object.CCClass [as Class] (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:685:17)
-    at __define (C:\h5Game\CrossTheRiver2\temp\quick-scripts\assets\Script\Boat.js:13:4)
-    at C:\h5Game\CrossTheRiver2\temp\quick-scripts\assets\Script\Boat.js:134:13
-    at Object.<anonymous> (C:\h5Game\CrossTheRiver2\temp\quick-scripts\assets\Script\Boat.js:141:11)
-    at Object.<anonymous> (C:\h5Game\CrossTheRiver2\temp\quick-scripts\assets\Script\Boat.js:144:3)
-    at Module._compile (module.js:571:32)
-2019-04-25T11:14:02.455Z - error: Property 'MainScript.riverBankInfo' must define at least one of 'default', 'get' or 'set'.
-    at Object.cc.errorID (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\CCDebug.js:167:16)
-    at Object.exports.preprocessAttrs (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\preprocess-class.js:215:36)
-    at declareProperties (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:642:28)
-    at Object.CCClass [as Class] (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:685:17)
-    at __define (C:\h5Game\CrossTheRiver2\temp\quick-scripts\assets\Script\MainScript.js:13:4)
-    at C:\h5Game\CrossTheRiver2\temp\quick-scripts\assets\Script\MainScript.js:266:13
-    at Object.<anonymous> (C:\h5Game\CrossTheRiver2\temp\quick-scripts\assets\Script\MainScript.js:273:11)
-    at Object.<anonymous> (C:\h5Game\CrossTheRiver2\temp\quick-scripts\assets\Script\MainScript.js:276:3)
-    at Module._compile (module.js:571:32)
-2019-04-25T11:14:19.655Z - success: VS Code extension installed to C:\Users\Administrator\.vscode\extensions
-2019-04-25T11:14:21.241Z - success: API data generated and copied to C:\h5Game\CrossTheRiver2\creator.d.ts
-2019-04-25T11:14:23.655Z - success: Compiling task has been added to .vscode/tasks.json, please run "compile" task in VS Code to trigger compile in Cocos Creator.
-2019-04-25T11:22:07.978Z - error: Property 'Boat.boatInfo' must define at least one of 'default', 'get' or 'set'.
-    at Object.cc.errorID (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\CCDebug.js:167:16)
-    at Object.exports.preprocessAttrs (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\preprocess-class.js:215:36)
-    at declareProperties (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:642:28)
-    at Object.CCClass [as Class] (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:685:17)
-    at __define (C:\h5Game\CrossTheRiver2\temp\quick-scripts\assets\Script\Boat.js:13:4)
-    at C:\h5Game\CrossTheRiver2\temp\quick-scripts\assets\Script\Boat.js:134:13
-    at Object.<anonymous> (C:\h5Game\CrossTheRiver2\temp\quick-scripts\assets\Script\Boat.js:141:11)
-    at Object.<anonymous> (C:\h5Game\CrossTheRiver2\temp\quick-scripts\assets\Script\Boat.js:144:3)
-    at Module._compile (module.js:571:32)
-2019-04-25T11:22:07.982Z - error: Property 'MainScript.riverBankInfo' must define at least one of 'default', 'get' or 'set'.
-    at Object.cc.errorID (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\CCDebug.js:167:16)
-    at Object.exports.preprocessAttrs (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\preprocess-class.js:215:36)
-    at declareProperties (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:642:28)
-    at Object.CCClass [as Class] (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:685:17)
-    at __define (C:\h5Game\CrossTheRiver2\temp\quick-scripts\assets\Script\MainScript.js:13:4)
-    at C:\h5Game\CrossTheRiver2\temp\quick-scripts\assets\Script\MainScript.js:266:13
-    at Object.<anonymous> (C:\h5Game\CrossTheRiver2\temp\quick-scripts\assets\Script\MainScript.js:273:11)
-    at Object.<anonymous> (C:\h5Game\CrossTheRiver2\temp\quick-scripts\assets\Script\MainScript.js:276:3)
-    at Module._compile (module.js:571:32)
-2019-04-25T11:24:02.145Z - error: Property 'Boat.boatInfo' must define at least one of 'default', 'get' or 'set'.
-    at Object.cc.errorID (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\CCDebug.js:167:16)
-    at Object.exports.preprocessAttrs (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\preprocess-class.js:215:36)
-    at declareProperties (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:642:28)
-    at Object.CCClass [as Class] (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:685:17)
-    at __define (C:\h5Game\CrossTheRiver2\temp\quick-scripts\assets\Script\Boat.js:13:4)
-    at C:\h5Game\CrossTheRiver2\temp\quick-scripts\assets\Script\Boat.js:134:13
-    at Object.<anonymous> (C:\h5Game\CrossTheRiver2\temp\quick-scripts\assets\Script\Boat.js:141:11)
-    at Object.<anonymous> (C:\h5Game\CrossTheRiver2\temp\quick-scripts\assets\Script\Boat.js:144:3)
-    at Module._compile (module.js:571:32)
-2019-04-25T11:24:02.148Z - error: Property 'MainScript.riverBankInfo' must define at least one of 'default', 'get' or 'set'.
-    at Object.cc.errorID (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\CCDebug.js:167:16)
-    at Object.exports.preprocessAttrs (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\preprocess-class.js:215:36)
-    at declareProperties (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:642:28)
-    at Object.CCClass [as Class] (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:685:17)
-    at __define (C:\h5Game\CrossTheRiver2\temp\quick-scripts\assets\Script\MainScript.js:13:4)
-    at C:\h5Game\CrossTheRiver2\temp\quick-scripts\assets\Script\MainScript.js:266:13
-    at Object.<anonymous> (C:\h5Game\CrossTheRiver2\temp\quick-scripts\assets\Script\MainScript.js:273:11)
-    at Object.<anonymous> (C:\h5Game\CrossTheRiver2\temp\quick-scripts\assets\Script\MainScript.js:276:3)
-    at Module._compile (module.js:571:32)
-2019-04-25T11:26:45.758Z - error: Property 'Boat.boatInfo' must define at least one of 'default', 'get' or 'set'.
-    at Object.cc.errorID (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\CCDebug.js:167:16)
-    at Object.exports.preprocessAttrs (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\preprocess-class.js:215:36)
-    at declareProperties (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:642:28)
-    at Object.CCClass [as Class] (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:685:17)
-    at __define (C:\h5Game\CrossTheRiver2\temp\quick-scripts\assets\Script\Boat.js:13:4)
-    at C:\h5Game\CrossTheRiver2\temp\quick-scripts\assets\Script\Boat.js:134:13
-    at Object.<anonymous> (C:\h5Game\CrossTheRiver2\temp\quick-scripts\assets\Script\Boat.js:141:11)
-    at Object.<anonymous> (C:\h5Game\CrossTheRiver2\temp\quick-scripts\assets\Script\Boat.js:144:3)
-    at Module._compile (module.js:571:32)
-2019-04-25T11:26:45.760Z - error: Property 'MainScript.riverBankInfo' must define at least one of 'default', 'get' or 'set'.
-    at Object.cc.errorID (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\CCDebug.js:167:16)
-    at Object.exports.preprocessAttrs (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\preprocess-class.js:215:36)
-    at declareProperties (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:642:28)
-    at Object.CCClass [as Class] (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:685:17)
-    at __define (C:\h5Game\CrossTheRiver2\temp\quick-scripts\assets\Script\MainScript.js:13:4)
-    at C:\h5Game\CrossTheRiver2\temp\quick-scripts\assets\Script\MainScript.js:266:13
-    at Object.<anonymous> (C:\h5Game\CrossTheRiver2\temp\quick-scripts\assets\Script\MainScript.js:273:11)
-    at Object.<anonymous> (C:\h5Game\CrossTheRiver2\temp\quick-scripts\assets\Script\MainScript.js:276:3)
-    at Module._compile (module.js:571:32)
-2019-04-25T11:27:40.054Z - error: Property 'Boat.boatInfo' must define at least one of 'default', 'get' or 'set'.
-    at Object.cc.errorID (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\CCDebug.js:167:16)
-    at Object.exports.preprocessAttrs (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\preprocess-class.js:215:36)
-    at declareProperties (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:642:28)
-    at Object.CCClass [as Class] (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:685:17)
-    at __define (C:\h5Game\CrossTheRiver2\temp\quick-scripts\assets\Script\Boat.js:13:4)
-    at C:\h5Game\CrossTheRiver2\temp\quick-scripts\assets\Script\Boat.js:134:13
-    at Object.<anonymous> (C:\h5Game\CrossTheRiver2\temp\quick-scripts\assets\Script\Boat.js:141:11)
-    at Object.<anonymous> (C:\h5Game\CrossTheRiver2\temp\quick-scripts\assets\Script\Boat.js:144:3)
-    at Module._compile (module.js:571:32)
-2019-04-25T11:27:40.056Z - error: Property 'MainScript.riverBankInfo' must define at least one of 'default', 'get' or 'set'.
-    at Object.cc.errorID (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\CCDebug.js:167:16)
-    at Object.exports.preprocessAttrs (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\preprocess-class.js:215:36)
-    at declareProperties (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:642:28)
-    at Object.CCClass [as Class] (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:685:17)
-    at __define (C:\h5Game\CrossTheRiver2\temp\quick-scripts\assets\Script\MainScript.js:13:4)
-    at C:\h5Game\CrossTheRiver2\temp\quick-scripts\assets\Script\MainScript.js:266:13
-    at Object.<anonymous> (C:\h5Game\CrossTheRiver2\temp\quick-scripts\assets\Script\MainScript.js:273:11)
-    at Object.<anonymous> (C:\h5Game\CrossTheRiver2\temp\quick-scripts\assets\Script\MainScript.js:276:3)
-    at Module._compile (module.js:571:32)
-2019-04-25T11:28:26.719Z - error: Property 'Boat.boatInfo' must define at least one of 'default', 'get' or 'set'.
-    at Object.cc.errorID (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\CCDebug.js:167:16)
-    at Object.exports.preprocessAttrs (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\preprocess-class.js:215:36)
-    at declareProperties (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:642:28)
-    at Object.CCClass [as Class] (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:685:17)
-    at __define (C:\h5Game\CrossTheRiver2\temp\quick-scripts\assets\Script\Boat.js:13:4)
-    at C:\h5Game\CrossTheRiver2\temp\quick-scripts\assets\Script\Boat.js:134:13
-    at Object.<anonymous> (C:\h5Game\CrossTheRiver2\temp\quick-scripts\assets\Script\Boat.js:141:11)
-    at Object.<anonymous> (C:\h5Game\CrossTheRiver2\temp\quick-scripts\assets\Script\Boat.js:144:3)
-    at Module._compile (module.js:571:32)
-2019-04-25T11:28:26.721Z - error: Property 'MainScript.riverBankInfo' must define at least one of 'default', 'get' or 'set'.
-    at Object.cc.errorID (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\CCDebug.js:167:16)
-    at Object.exports.preprocessAttrs (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\preprocess-class.js:215:36)
-    at declareProperties (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:642:28)
-    at Object.CCClass [as Class] (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:685:17)
-    at __define (C:\h5Game\CrossTheRiver2\temp\quick-scripts\assets\Script\MainScript.js:13:4)
-    at C:\h5Game\CrossTheRiver2\temp\quick-scripts\assets\Script\MainScript.js:266:13
-    at Object.<anonymous> (C:\h5Game\CrossTheRiver2\temp\quick-scripts\assets\Script\MainScript.js:273:11)
-    at Object.<anonymous> (C:\h5Game\CrossTheRiver2\temp\quick-scripts\assets\Script\MainScript.js:276:3)
-    at Module._compile (module.js:571:32)
-2019-04-25T11:28:54.500Z - error: Property 'Boat.boatInfo' must define at least one of 'default', 'get' or 'set'.
-    at Object.cc.errorID (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\CCDebug.js:167:16)
-    at Object.exports.preprocessAttrs (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\preprocess-class.js:215:36)
-    at declareProperties (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:642:28)
-    at Object.CCClass [as Class] (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:685:17)
-    at __define (C:\h5Game\CrossTheRiver2\temp\quick-scripts\assets\Script\Boat.js:13:4)
-    at C:\h5Game\CrossTheRiver2\temp\quick-scripts\assets\Script\Boat.js:134:13
-    at Object.<anonymous> (C:\h5Game\CrossTheRiver2\temp\quick-scripts\assets\Script\Boat.js:141:11)
-    at Object.<anonymous> (C:\h5Game\CrossTheRiver2\temp\quick-scripts\assets\Script\Boat.js:144:3)
-    at Module._compile (module.js:571:32)
-2019-04-25T11:29:08.867Z - error: Property 'Boat.boatInfo' must define at least one of 'default', 'get' or 'set'.
-    at Object.cc.errorID (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\CCDebug.js:167:16)
-    at Object.exports.preprocessAttrs (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\preprocess-class.js:215:36)
-    at declareProperties (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:642:28)
-    at Object.CCClass [as Class] (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:685:17)
-    at __define (C:\h5Game\CrossTheRiver2\temp\quick-scripts\assets\Script\Boat.js:13:4)
-    at C:\h5Game\CrossTheRiver2\temp\quick-scripts\assets\Script\Boat.js:134:13
-    at Object.<anonymous> (C:\h5Game\CrossTheRiver2\temp\quick-scripts\assets\Script\Boat.js:141:11)
-    at Object.<anonymous> (C:\h5Game\CrossTheRiver2\temp\quick-scripts\assets\Script\Boat.js:144:3)
-    at Module._compile (module.js:571:32)
+2019-04-28T01:41:09.464Z - normal: Load ~/.CocosCreator/settings.json
+2019-04-28T01:41:09.543Z - normal: Initializing Asset Database
+2019-04-28T01:41:09.547Z - normal: checking language setting...
+2019-04-28T01:41:09.547Z - normal: Language: zh
+2019-04-28T01:41:10.453Z - success: preview server running at http://localhost:7456
+2019-04-28T01:41:10.469Z - success: protocol editor-framework registered
+2019-04-28T01:41:10.469Z - success: protocol app registered
+2019-04-28T01:41:10.470Z - success: protocol theme registered
+2019-04-28T01:41:10.470Z - success: protocol packages registered
+2019-04-28T01:41:10.470Z - success: protocol uuid registerred
+2019-04-28T01:41:10.470Z - success: protocol db registerred
+2019-04-28T01:41:10.471Z - success: protocol thumbnail registerred
+2019-04-28T01:41:10.471Z - success: protocol unpack registerred
+2019-04-28T01:41:10.471Z - success: protocol disable-commonjs registerred
+2019-04-28T01:41:10.609Z - normal: connected!
+2019-04-28T01:41:10.610Z - normal: Check project /Users/admin/Documents/cocos/CrossTheRiver2
+2019-04-28T01:41:10.612Z - normal: Initializing project /Users/admin/Documents/cocos/CrossTheRiver2
+2019-04-28T01:41:11.132Z - normal: Initializing Cocos2d
+2019-04-28T01:41:12.296Z - normal: Initializing engine extends
+2019-04-28T01:41:12.340Z - success: asset-db-debugger loaded
+2019-04-28T01:41:12.342Z - success: baidu-adapter loaded
+2019-04-28T01:41:12.344Z - success: color-picker loaded
+2019-04-28T01:41:12.456Z - success: fb-audience-network loaded
+2019-04-28T01:41:12.537Z - success: fb-live-stream loaded
+2019-04-28T01:41:12.544Z - success: google-play-instant loaded
+2019-04-28T01:41:12.554Z - success: huawei-runtime loaded
+2019-04-28T01:41:12.557Z - success: jsb-adapter loaded
+2019-04-28T01:41:12.565Z - success: oppo-runtime loaded
+2019-04-28T01:41:12.576Z - success: package-manager loaded
+2019-04-28T01:41:12.750Z - success: qqplay-adapter loaded
+2019-04-28T01:41:12.755Z - success: runtime-dev-tools loaded
+2019-04-28T01:41:12.762Z - success: sdkbox loaded
+2019-04-28T01:41:12.772Z - success: tester loaded
+2019-04-28T01:41:12.780Z - success: ui-grid loaded
+2019-04-28T01:41:12.787Z - success: ui-kit-preview-extra loaded
+2019-04-28T01:41:12.793Z - success: ui-kit-preview loaded
+2019-04-28T01:41:12.801Z - success: ui-kit loaded
+2019-04-28T01:41:12.808Z - success: ui-tree loaded
+2019-04-28T01:41:12.818Z - success: vivo-runtime loaded
+2019-04-28T01:41:12.821Z - success: weapp-adapter loaded
+2019-04-28T01:41:12.870Z - success: assets loaded
+2019-04-28T01:41:12.874Z - success: builder loaded
+2019-04-28T01:41:13.194Z - success: cocos-services loaded
+2019-04-28T01:41:13.199Z - success: console loaded
+2019-04-28T01:41:13.238Z - success: fb-instant-games loaded
+2019-04-28T01:41:13.242Z - success: google-instant-games loaded
+2019-04-28T01:41:13.249Z - success: hierarchy loaded
+2019-04-28T01:41:13.254Z - success: inspector loaded
+2019-04-28T01:41:13.255Z - success: keystore loaded
+2019-04-28T01:41:13.261Z - success: node-library loaded
+2019-04-28T01:41:13.263Z - success: package-asset loaded
+2019-04-28T01:41:13.267Z - success: preferences loaded
+2019-04-28T01:41:13.272Z - success: project-exporter loaded
+2019-04-28T01:41:13.279Z - success: project-importer loaded
+2019-04-28T01:41:13.283Z - success: project-settings loaded
+2019-04-28T01:41:13.290Z - success: scene loaded
+2019-04-28T01:41:13.292Z - success: simulator-debugger loaded
+2019-04-28T01:41:13.295Z - success: sprite-editor loaded
+2019-04-28T01:41:13.301Z - success: store loaded
+2019-04-28T01:41:13.310Z - success: timeline loaded
+2019-04-28T01:41:14.835Z - normal: Loading packages
+2019-04-28T01:41:14.840Z - normal: Watching packages
+2019-04-28T01:41:14.993Z - normal: Run Application
+2019-04-28T01:41:15.627Z - info: Cocos Services load base data!

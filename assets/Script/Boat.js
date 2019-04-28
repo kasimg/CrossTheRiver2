@@ -100,7 +100,7 @@ cc.Class({
   //  移动
   sail({ delX, delY }) {
     const sailAction = cc
-      .moveBy(1, cc.v2(delX, delY))
+      .moveBy(3, cc.v2(delX, delY))
       .easing(cc.easeCubicActionOut());
 
     // const se = cc.sequence(sailAction, cc.callFunc(() => {
