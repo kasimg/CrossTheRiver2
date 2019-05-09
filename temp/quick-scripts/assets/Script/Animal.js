@@ -115,7 +115,7 @@ cc.Class({
     var delX = _ref2.delX,
         delY = _ref2.delY;
 
-    var sailAction = cc.moveBy(1, cc.v2(delX, delY)).easing(cc.easeCubicActionOut());
+    var sailAction = cc.moveBy(3, cc.v2(delX, delY)).easing(cc.easeCubicActionOut());
 
     this.node.runAction(sailAction);
     // return sailAction;

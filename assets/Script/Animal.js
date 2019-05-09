@@ -106,7 +106,7 @@ cc.Class({
   //  点击GO之后的移动行为
   sail({ delX, delY }) {
     const sailAction = cc
-      .moveBy(1, cc.v2(delX, delY))
+      .moveBy(3, cc.v2(delX, delY))
       .easing(cc.easeCubicActionOut());
 
     this.node.runAction(sailAction);

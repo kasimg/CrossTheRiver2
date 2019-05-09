@@ -2,7 +2,7 @@
   "actualPlatform": "web-desktop",
   "apiLevel": "",
   "appABIs": [],
-  "buildPath": "./release",
+  "buildPath": "./build",
   "debug": false,
   "embedWebDebugger": false,
   "keystoreAlias": "",

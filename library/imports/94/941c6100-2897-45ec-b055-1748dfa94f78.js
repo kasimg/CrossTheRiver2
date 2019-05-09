@@ -1,6 +1,6 @@
 "use strict";
 cc._RF.push(module, '941c6EAKJdF7LBVF0jfqU94', 'Data');
-// Script/static/Data.js
+// Script/Data.js
 
 "use strict";
 
